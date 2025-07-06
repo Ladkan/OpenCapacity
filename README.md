@@ -5,3 +5,5 @@
 > Vite, React, Tailwind
 - Server
 > express
+- Database
+> MongoDB
