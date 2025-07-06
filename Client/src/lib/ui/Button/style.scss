@@ -1,0 +1,43 @@
+.btn{
+    color: #6B7280;
+    font-weight: 500;
+    padding-inline: .75rem;
+    border-radius: calc(.5rem - 2px);
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    &.sm{
+        height: 2.25rem;
+    }
+    &.md{
+        height: 2.5rem;
+    }
+    &.ghost{
+        border: none;
+        &:hover{
+            background-color: #E5E7EB;
+            color: black;
+        }
+    }
+    &.danger{
+        background-color: #dc2626;
+        color: white;
+        border: #dc2626;
+    }
+    &.solid{
+        background-color: black;
+        color: white !important;
+    }
+    &.outline{
+        border: 1px solid #E5E7EB;
+        background-color: white;
+        &:hover{
+            color: #E5E7EB;
+            background-color: black;
+        }
+    }
+}
