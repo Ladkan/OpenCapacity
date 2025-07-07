@@ -3,6 +3,7 @@ import {get, identity, merge} from 'lodash'
 import { getUserBySessionToken } from '../db/users'
 import { getListingById } from '../db/listings'
 import { getBookingById } from '../db/bookings'
+import { console } from 'inspector'
 
 export const isAuthenticated = async (req: express.Request, res: express.Response, next: express.NextFunction) => {
     try{
@@ -32,17 +33,17 @@ export const isListingOwner = async (req: express.Request, res: express.Response
     
          const {id} = req.params
          const listing = await getListingById(id)
-
+        
         if(!listing)
-            return res.sendStatus(400)
+            return res.status(400).json({"message":"Not valid listing"})
 
          const currentUserId = get(req, 'identity._id') as string
 
          if(!currentUserId)
-            return res.sendStatus(400)
+            return res.status(400).json({"message":"Cannot get current user"})
 
-         if(currentUserId.toString() != listing.user_id)
-            return res.sendStatus(400)
+         if(currentUserId.toString() != listing.user_id.toString())
+            return res.status(400).json({"message":"User is not owner of this listing"})
 
          next()
 
@@ -65,7 +66,7 @@ export const isOnBooking = async (req: express.Request, res: express.Response, n
         if(!currentUserId)
             return res.status(400).json({"message":"Cannot get current user"})
 
-        if(currentUserId.toString() != booking.user_id && currentUserId.toString() != booking.merchant_id)
+        if(currentUserId.toString() != booking.user_id.id.toString() && currentUserId.toString() != booking.merchant_id.id.toString())
             return res.status(400).json({"message":"Not valid user"})
 
         next()
@@ -89,7 +90,7 @@ export const isBookingOwner = async (req: express.Request, res: express.Response
         if(!currentUserId)
             return res.sendStatus(400)
 
-        if(currentUserId.toString() != booking.user_id)
+        if(currentUserId.toString() != booking.user_id.toString())
             return res.sendStatus(400)
 
         next()
