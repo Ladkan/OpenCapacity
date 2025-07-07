@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "686a8f9fb8d804a194925164"
+  },
+  "username": "User",
+  "email": "user@test.com",
+  "role": "user",
+  "authentication": {
+    "password": "91fbdde95dc7ce3d6ef6aab4fcc4790791850b4c874a026a5481430cf0930f33",
+    "salt": "uksGpg4i/8/KtJTqOViXRVzelO79z3t8ey4r9tHduP7r2M9wwrrURl94eKhrIaVCaK2lUi4epZf4cQxf1phhge2Y9KNTmcJoBUApuE9jegAy4tOJQzxux8ecrJpFOQzdxips68na/STBPd41ui+Lp0yBxnmb7hwJqQdAJPjcCpk=",
+    "sessionToken": "d52ce00df635cdd1c58a27e0b60a40bb480ed857573e0b1325d48e406708382e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686b7ab8a31cbe778ba150da"
+  },
+  "username": "Admin",
+  "email": "admin@test.com",
+    "role": "admin",
+  "authentication": {
+    "password": "987be23d0207d54fd6c6ed58c12934d0f9b9682acfd03155e372f616027c1c0d",
+    "salt": "niE/UQIr42mB2IYsIDN3xnL1k61f5CekHNJij7BFwhy2ogleJ0kL9zNm6dS6u7Pq7scIXKndC828rfW2qjAFQOxUjXdL2+830ftGFTtp9J/LZrcW+CrrZ+ZX5be6hmJQKjhTEX1phU5E0SSG+LorL/52n/ivXbJjjb+LAznnrig=",
+    "sessionToken": "ed625d04936746c8d407c30a1aea773c889d6ea5c81dd92fc828bd82d4b30c2a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686b7d5a34c8c640711f27b5"
+  },
+  "username": "Precision Manufacturing Co.",
+  "email": "precisionmanufacturing@test.com",
+  "role": "merchant",
+  "authentication": {
+    "password": "c03f1fd55d2862ef3aeda9cc041ce605c1a10b5554c109101c0dc6f906305caf",
+    "salt": "nONP4r5m9XDvfNexKl49ben8eQdH7wzYMJUI/jX5YtYjjoLsUnQIN2Iuy2Awz9m0e/AixjyT2ctYBLvxeOgfej2PVQPLAmhxR+d+xFfS2kGQQ0Vk4thjhWYg1/v2DYi9hnBAsd7mjv77F9ZQWUVzPWLz+D2X45R2VLXDxdyjevw="
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686b7d9a34c8c640711f27b8"
+  },
+  "username": "MetalWorks LLC",
+  "email": "metalworks@test.com",
+  "role": "merchant",
+  "authentication": {
+    "password": "910313ec6ba05f6a0febcbb50b4a15aa43acb56bf50317e0c1935b45b5405e7c",
+    "salt": "WyTN5oboQB+438FNfl3Ikn7goKrkZU77fkyUmApFWkowRwOHLrfSSu/S+PSPee0LnK+hZK1ka2jvtghnAvlaOdSnU4Lfxy7W9yPsaldbO5hv3ggX2X4GZ7K9YZ11JLTB7pGIgTXyTEj7v2y58i4t0YlYpaIPuyXatKzJ9YFBXoY="
+  },
+  "__v": 0
+}]

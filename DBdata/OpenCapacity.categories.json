@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "686b6a5b2580b7a0a3dff7c3"
+  },
+  "name": "Injection Molding"
+},
+{
+  "_id": {
+    "$oid": "686b6aa52580b7a0a3dff7c4"
+  },
+  "name": "CNC Machining"
+},
+{
+  "_id": {
+    "$oid": "686b6ab82580b7a0a3dff7c5"
+  },
+  "name": "3D Printing"
+},
+{
+  "_id": {
+    "$oid": "686b6ac62580b7a0a3dff7c6"
+  },
+  "name": "Laser Cutting"
+},
+{
+  "_id": {
+    "$oid": "686b6ad62580b7a0a3dff7c7"
+  },
+  "name": "Surface Treatment"
+},
+{
+  "_id": {
+    "$oid": "686b6aea2580b7a0a3dff7c8"
+  },
+  "name": "Welding"
+},
+{
+  "_id": {
+    "$oid": "686b6afb2580b7a0a3dff7c9"
+  },
+  "name": "Metal Forming"
+}]

@@ -8,7 +8,7 @@ import mongoose, { ConnectOptions } from 'mongoose'
 import router from './router'
 import config from './config'
 
-const app = express()
+const app = express();
 
 app.use(cors({
     credentials: true
