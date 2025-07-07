@@ -30,4 +30,12 @@ function CardDescription(props:any){
     )
 }
 
-export {Card, CardHeader, CardTitle, CardDescription}
+function CardContent(props:any){
+    return(
+        <div className={`p-6 ${props.className}`}>
+            {props.children}
+        </div>
+    )
+}
+
+export {Card, CardHeader, CardTitle, CardDescription, CardContent}

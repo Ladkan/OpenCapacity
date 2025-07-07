@@ -1,0 +1,182 @@
+[{
+  "_id": {
+    "$oid": "686c164e47f22c764a141060"
+  },
+  "user_id": {
+    "$oid": "686b7d5a34c8c640711f27b5"
+  },
+  "cover": "https://www.boyiprototyping.com/wp-content/uploads/2024/07/cnc-machine-shop.webp",
+  "title": "High-Precision CNC Machining Center",
+  "description": "Test description",
+  "category": {
+    "$oid": "686b6aa52580b7a0a3dff7c4"
+  },
+  "location": "Detroit, MI",
+  "available_from": {
+    "$date": "2024-12-31T23:00:00.000Z"
+  },
+  "available_to": {
+    "$date": "2025-01-11T23:00:00.000Z"
+  },
+  "price_per_hour": 85,
+  "created": {
+    "$date": "2025-07-07T18:47:42.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686c16c247f22c764a141066"
+  },
+  "user_id": {
+    "$oid": "686b7d9a34c8c640711f27b8"
+  },
+  "cover": "https://www.cfmanufacturing.cz/obrazky/rweld/R26A6282.jpg",
+  "title": "Robotic Welding Cell",
+  "description": "Test description",
+  "category": {
+    "$oid": "686b6aea2580b7a0a3dff7c8"
+  },
+  "location": "Pittsburgh, PA",
+  "available_from": {
+    "$date": "2024-12-31T23:00:00.000Z"
+  },
+  "available_to": {
+    "$date": "2025-01-11T23:00:00.000Z"
+  },
+  "price_per_hour": 95,
+  "created": {
+    "$date": "2025-07-07T18:49:38.111Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686c174c47f22c764a141069"
+  },
+  "user_id": {
+    "$oid": "686b7d5a34c8c640711f27b5"
+  },
+  "cover": "https://cdn.prod.website-files.com/620126acdd13716fb8a8b3e3/62cf87a5cd5cb4a1fa590b69_Og-image.jpg",
+  "title": "Industrial 3D Printing Array",
+  "description": "Test description",
+  "category": {
+    "$oid": "686b6ab82580b7a0a3dff7c5"
+  },
+  "location": "Austin, TX",
+  "available_from": {
+    "$date": "2024-12-31T23:00:00.000Z"
+  },
+  "available_to": {
+    "$date": "2025-01-11T23:00:00.000Z"
+  },
+  "price_per_hour": 45,
+  "created": {
+    "$date": "2025-07-07T18:51:56.585Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686c178a47f22c764a14106c"
+  },
+  "user_id": {
+    "$oid": "686b7d5a34c8c640711f27b5"
+  },
+  "cover": "https://reasonablechoice.net/IMG/Equipment-EN/Powder-Coating-Lines-EUROIMPIANTI-surface-preparation-tunnel-reasonablechoice.net.jpg",
+  "title": "Powder Coating Line",
+  "description": "Test description",
+  "category": {
+    "$oid": "686b6ad62580b7a0a3dff7c7"
+  },
+  "location": "Atlanta, GA",
+  "available_from": {
+    "$date": "2024-12-31T23:00:00.000Z"
+  },
+  "available_to": {
+    "$date": "2025-01-11T23:00:00.000Z"
+  },
+  "price_per_hour": 35,
+  "created": {
+    "$date": "2025-07-07T18:52:58.404Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686c181947f22c764a141074"
+  },
+  "user_id": {
+    "$oid": "686b7d9a34c8c640711f27b8"
+  },
+  "cover": "https://cdn.prod.website-files.com/61ead0f2b754b7bb1063e99b/6243098df83d08db82c7c462__BUC0514_small.jpg",
+  "title": "Sheet Metal Forming Press",
+  "description": "Test description",
+  "category": {
+    "$oid": "686b6afb2580b7a0a3dff7c9"
+  },
+  "location": "Cleveland, OH",
+  "available_from": {
+    "$date": "2024-12-31T23:00:00.000Z"
+  },
+  "available_to": {
+    "$date": "2025-01-11T23:00:00.000Z"
+  },
+  "price_per_hour": 75,
+  "created": {
+    "$date": "2025-07-07T18:55:21.852Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686c188347f22c764a141077"
+  },
+  "user_id": {
+    "$oid": "686b7d9a34c8c640711f27b8"
+  },
+  "cover": "https://www.catekcnc.com/uploads/202410/31/CdhLBQqdarqU3EXThCzR.webp",
+  "title": "Laser Cutting & Engraving Station",
+  "description": "Test description",
+  "category": {
+    "$oid": "686b6ac62580b7a0a3dff7c6"
+  },
+  "location": "Phoenix, AZ",
+  "available_from": {
+    "$date": "2024-12-31T23:00:00.000Z"
+  },
+  "available_to": {
+    "$date": "2025-01-11T23:00:00.000Z"
+  },
+  "price_per_hour": 65,
+  "created": {
+    "$date": "2025-07-07T18:57:07.590Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686c190447f22c764a14107d"
+  },
+  "user_id": {
+    "$oid": "686b7d5a34c8c640711f27b5"
+  },
+  "cover": "https://www.topstarmachine.com/wp-content/uploads/2022/12/Automated-Assembly-Line-1024x768.jpg",
+  "title": "Automated Injection Molding Line",
+  "description": "Test description",
+  "category": {
+    "$oid": "686b6a5b2580b7a0a3dff7c3"
+  },
+  "location": "Chicago, IL",
+  "available_from": {
+    "$date": "2024-12-31T23:00:00.000Z"
+  },
+  "available_to": {
+    "$date": "2025-01-11T23:00:00.000Z"
+  },
+  "price_per_hour": 120,
+  "created": {
+    "$date": "2025-07-07T18:59:16.491Z"
+  },
+  "__v": 0
+}]

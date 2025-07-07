@@ -7,7 +7,7 @@ function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-400">
+    <header className="sticky top-0 z-[99] bg-white/95 backdrop-blur-sm border-b border-gray-400">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">

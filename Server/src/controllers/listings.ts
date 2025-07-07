@@ -3,15 +3,16 @@ import { createListing, deleteListingById, getListingById, getListings, getMerch
 
 export const ListingCreate = async (req:express.Request, res: express.Response) => {
     try{
-        const {title, description, category, location, available_from, available_to, price_per_hour, user_id} = req.body
+        const {title, description, category, location, available_from, available_to, price_per_hour, user_id, cover} = req.body
     
-        if(!title || !description || !category || !location || !available_from || !available_to || !price_per_hour || !user_id)
+        if(!title || !description || !category || !location || !available_from || !available_to || !price_per_hour || !user_id || !cover)
             return res.sendStatus(400)
 
         const today = Date.now()
 
         const listing = await createListing({
             user_id,
+            cover,
             title,
             description,
             category,
