@@ -4,8 +4,11 @@ import Layout from "./lib/layout/_layout";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 import Market from "./pages/Market";
+import Listing from "./pages/Listing";
+import Login from "./pages/Login";
 
 function App() {
+
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
@@ -20,7 +23,9 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route element={<Home />} path="/" />
+            <Route element={<Login />} path="/login" />
             <Route element={<Market />} path="/market" />
+            <Route element={<Listing />} path="/listing/:id" />
           </Route>
         </Routes>
       </BrowserRouter>

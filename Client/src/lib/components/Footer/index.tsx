@@ -94,7 +94,7 @@ function Footer() {
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 OpenCapacity. All rights reserved.
+            © 2025 OpenCapacity. All rights reserved. <a href="https://github.com/Ladkan">Created by: Jan Kadlec</a>
           </p>
           <div className="flex space-x-6 text-sm text-gray-400 mt-4 md:mt-0">
             <Link to="#" className="hover:text-white transition-colors">

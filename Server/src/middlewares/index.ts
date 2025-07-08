@@ -4,6 +4,7 @@ import { getUserBySessionToken } from '../db/users'
 import { getListingById } from '../db/listings'
 import { getBookingById } from '../db/bookings'
 import { console } from 'inspector'
+import { getDetailById } from '../db/listingdetails'
 
 export const isAuthenticated = async (req: express.Request, res: express.Response, next: express.NextFunction) => {
     try{
@@ -44,6 +45,31 @@ export const isListingOwner = async (req: express.Request, res: express.Response
 
          if(currentUserId.toString() != listing.user_id.toString())
             return res.status(400).json({"message":"User is not owner of this listing"})
+
+         next()
+
+    } catch(error){
+        console.log(error)
+        return res.sendStatus(400)
+    }
+}
+
+export const isDetailOwner = async (req: express.Request, res: express.Response, next: express.NextFunction) => {
+    try{
+    
+         const {id} = req.params
+         const detail = await getDetailById(id)
+        
+        if(!detail)
+            return res.status(400).json({"message":"Not valid detail"})
+
+         const currentUserId = get(req, 'identity._id') as string
+
+         if(!currentUserId)
+            return res.status(400).json({"message":"Cannot get current user"})
+
+         if(currentUserId.toString() != detail.user_id.toString())
+            return res.status(400).json({"message":"User is not owner of this detail"})
 
          next()
 

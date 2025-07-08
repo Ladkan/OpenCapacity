@@ -16,8 +16,8 @@ export const login = async (req: express.Request,  res: express.Response) => {
 
         const expectedHAsh = authentication(user.authentication.salt,password)
 
-        if(user.authentication.password != expectedHAsh)
-            return res.sendStatus(403)
+        if( expectedHAsh != user.authentication.password)
+            return res.status(403).json({"message":"Wrong password or email"})
 
         const salt = random()
 

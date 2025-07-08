@@ -5,6 +5,7 @@ import listings from './listings'
 import categories from './categories'
 import messages from './messages'
 import bookings from './bookings'
+import details from './details'
 
 const router = express.Router()
 
@@ -16,6 +17,7 @@ export default (): express.Router => {
     categories(router)
     bookings(router)
     messages(router)
+    details(router)
 
     return router
 }

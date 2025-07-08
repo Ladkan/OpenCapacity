@@ -32,8 +32,7 @@ function Market() {
   const [sortBy, setSortBy] = useState("name");
   const [showFilters, setShowFilters] = useState(false);
 
-  const filteredListings = data?.data
-    .filter((listing: any) => {
+  const filteredListings = data?.data.filter((listing: any) => {
       const matchesSearch =
         listing.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         listing.user_id.username
@@ -58,7 +57,7 @@ function Market() {
 
   return (
     <>
-      <section className="py-12 bg-white border-b border-gray-400">
+      <section className="py-12 bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div>
@@ -78,7 +77,7 @@ function Market() {
           </div>
         </div>
       </section>
-      <section className="py-6 bg-white border-b border-gray-400">
+      <section className="py-6 bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="relative flex-1">

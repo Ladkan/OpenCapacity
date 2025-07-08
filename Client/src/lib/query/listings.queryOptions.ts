@@ -11,3 +11,12 @@ export function getAllListings(){
         placeholderData: (prev) => prev,
     })
 }
+
+export function getListing(id:string){
+    return queryOptions({
+        queryKey: ['listing_'+id],
+        queryFn: () => axios.get(config.API_URL+"/listings/"+id),
+        staleTime: 50000,
+        placeholderData: (prev) => prev
+    })
+}

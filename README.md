@@ -2,7 +2,7 @@
   B2B marketplace pro sdílení nevyužitých kapacit
   ```
   users: user|admin|precisionmanufacturing|metalworks@test.com
-  password: 1234567890
+  password: 1234567980
   ```
 ## Stack
 - Client
@@ -34,4 +34,8 @@ Route | Method | Desc
 /listings/merchant/:id | GET | Get all merchants listings
 /messages | POST | Create message 
 /messages/:id | GET | Get all messages for a booking by id
+/details | POST | Create details for listing
+/details/:id | GET | Get listing details by listng id
+/details/:id | PATCH | Update details by details id
+/details/:id | DELETE | Delete details by details by
 

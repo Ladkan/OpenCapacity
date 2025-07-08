@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "686c37d2a4bc9739e1416048"
+  },
+  "user_id": {
+    "$oid": "686b7d5a34c8c640711f27b5"
+  },
+  "listing_id": {
+    "$oid": "686c164e47f22c764a141060"
+  },
+  "setup_fee": 150,
+  "rush_order_fee": 25,
+  "volume_discounts": [
+    {
+      "hours": 40,
+      "discount": 5
+    },
+    {
+      "hours": 100,
+      "discount": 10
+    },
+    {
+      "hours": 200,
+      "discount": 15
+    }
+  ],
+  "materials": [
+    "Aluminum",
+    "Steel",
+    "Stainless Steel",
+    "Titanium",
+    "Inconel",
+    "Brass",
+    "Copper"
+  ],
+  "specs": [
+    {
+      "name": "Machine Model",
+      "content": "Haas VF-4SS Super-Speed"
+    },
+    {
+      "name": "Spindle Speed",
+      "content": "15,000 RPM"
+    },
+    {
+      "name": "Rapid Traverse",
+      "content": "1,200 IPM (XY), 1,000 IPM (Z)"
+    },
+    {
+      "name": "Repeatability",
+      "content": "±0.0001' (±0.0025mm)"
+    },
+    {
+      "name": "Max Weight",
+      "content": "3,000 lbs"
+    },
+    {
+      "name": "Work Envelope",
+      "content": "50' x 20' x 25' (XYZ)"
+    },
+    {
+      "name": "Tool Capacity",
+      "content": "40 Tools (HSK-A63)"
+    },
+    {
+      "name": "Accuracy",
+      "content": "±0.0002' (±0.005mm)"
+    },
+    {
+      "name": "Table Size",
+      "content": "50' x 20'"
+    },
+    {
+      "name": "Control System",
+      "content": "Haas NGC"
+    }
+  ]
+}]

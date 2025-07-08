@@ -2,12 +2,22 @@ import { Link } from "react-router-dom";
 import { Icon_Factory, Icon_Menu, Icon_X } from "../../utils/icons";
 import Button from "../../ui/Button";
 import { useState } from "react";
+import { useGetUser } from "../../auth/auth.hooks";
+import { useQueryClient } from "@tanstack/react-query";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { data: user } = useGetUser();
+const queryClient = useQueryClient()
+const handleLogout = () => {
+  console.log('logout')
+  document.cookie = "AUTH=; path=/"
+    queryClient.setQueryData(['user'], false)
+    queryClient.invalidateQueries({queryKey: ['user']})
+}
 
   return (
-    <header className="sticky top-0 z-[99] bg-white/95 backdrop-blur-sm border-b border-gray-400">
+    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
@@ -37,12 +47,20 @@ function Header() {
             </a>
           </nav>
           <div className="hidden md:flex items-center space-x-4">
-            <Button size="sm" variat="ghost" redirect="/login">
-              Sign In
-            </Button>
-            <Button size="sm" variant="solid" redirect="/register">
-              Get Started
-            </Button>
+            {user ? (
+              <Button size="sm" variat="ghost" action={handleLogout}>
+                Sign out
+              </Button>
+            ) : (
+              <>
+                <Button size="sm" variat="ghost" redirect="/login">
+                  Sign In
+                </Button>
+                <Button size="sm" variant="solid" redirect="/register">
+                  Get Started
+                </Button>
+              </>
+            )}
           </div>
           <button
             className="md:hidden"
