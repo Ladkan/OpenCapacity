@@ -1,4 +1,4 @@
-# OpenCapacity
+# OpenCapacity (WIP)
   B2B marketplace pro sdílení nevyužitých kapacit
   ```
   users: user|admin|precisionmanufacturing|metalworks@test.com
